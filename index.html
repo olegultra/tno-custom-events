@@ -10,7 +10,13 @@
 <body>
     <h1>TNO Super Event Generator</h1>
     <div class="pic-container">
-        <img src="./assets/tno-template.png" width="1200">
+        <div class="asset-pic country-flag-pic-container"><img id="country-flag-pic"></div>
+        <div class="asset-pic country-leader-pic-container"><img id="country-leader-pic"></div>
+        <div class="asset-pic ideology-icon-pic-container"><img id="ideology-icon-pic"></div>
+        <div class="asset-pic national-focus-icon-pic-container"><img id="national-focus-icon-pic"></div>
+        <div class="asset-pic news-pic-container"><img id="news-pic"></div>
+        <div class="asset-pic super-event-pic-container"><img id="super-event-pic"></div>
+        <div class="template-pic-container"><img src="./assets/tno-template.png" id="template-pic" width="1148"></div>
         <p class="political-window-label country-info-label" id="country-name-label"></p>
         <p class="political-window-label country-info-label" id="faction-name-label"></p>
         <p class="political-window-label country-info-label" id="leader-name-label"></p>
@@ -18,24 +24,27 @@
         <p class="political-window-label" id="ideology-name-label"></p>
         <p class="political-window-label" id="next-election-label"></p>
         <p class="political-window-label national-focus-button-label" id="national-focus-name-label"></p>
+        <p class="world-news-popup-label" id="news-title-label"></p>
+        <p class="world-news-popup-label" id="news-description-label"></p>
+        <p class="world-news-popup-label" id="news-button-label"></p>
     </div>
     <button id="test-button">Test</button>
     <h2>Political Window</h2>
     <table>
         <tr>
-            <td>Country Flag:</td>
+            <td>Country Flag (82x52):</td>
             <td></td>
         </tr>
         <tr>
-            <td>Leader Portrait:</td>
+            <td>Leader Portrait (156x210):</td>
             <td></td>
         </tr>
         <tr>
-            <td>Ideology Icon:</td>
+            <td>Ideology Icon (68x68):</td>
             <td></td>
         </tr>
         <tr>
-            <td>National Focus Icon:</td>
+            <td>National Focus Icon (94x76):</td>
             <td></td>
         </tr>
         <tr>
@@ -75,23 +84,27 @@
     <h2>World News Popup</h2>
     <table>
         <tr>
-            <td>Picture:</td>
+            <td>Picture (161x420):</td>
             <td></td>
         </tr>
         <tr>
             <td>Title:</td>
-            <td></td>
+            <td><input type="text" id="news-title-input"></input></td>
         </tr>
         <tr>
             <td>Description:</td>
-            <td></td>
+            <td><textarea id="news-description-input"></textarea></td>
+        </tr>
+        <tr>
+            <td>Button Text:</td>
+            <td><input type="text" id="news-button-input"></input></td>
         </tr>
     </table>
 
     <h2>Super Event Popup</h2>
     <table>
         <tr>
-            <td>Picture:</td>
+            <td>Picture (573x455):</td>
             <td></td>
         </tr>
         <tr>
