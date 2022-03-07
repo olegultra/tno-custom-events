@@ -5,10 +5,31 @@
 * Source Han Sans JP
 */
 
+@font-face {
+    font-family: '03SmartFont';
+    src: url('./assets/fonts/03SmartFont.otf');
+}
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url('./assets/fonts/Aldrich-Regular.ttf');
+}
+
 .pic-container {
     position: relative;
+    background-color: black;
 }
 
 .political-window-label {
     color: darkgray;
+    font-family: 'Aldrich', '03SmartFont';
+}
+
+.country-info-label {
+    color: white;
+    font-weight: bold;
+}
+
+.national-focus-button-label {
+    translate: translate(-50%, -50%);
 }
