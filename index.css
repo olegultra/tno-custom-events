@@ -67,7 +67,13 @@
     z-index: 1;
 }
 
+#super-event-pic {
+    width: 620px;
+}
+
 .super-event-pic-container {
+    top: 54px;
+    left: 522px;
     z-index: 1;
 }
 

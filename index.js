@@ -52,6 +52,7 @@ function test_button_event()
     document.getElementById("ideology-icon-pic").setAttribute("src", "./assets/sample/national_socialism_group.png");
     document.getElementById("national-focus-icon-pic").setAttribute("src", "./assets/sample/goal_unknown.png");
     document.getElementById("news-pic").setAttribute("src", "./assets/sample/news_event_german_civil_war.png");
+    document.getElementById("super-event-pic").setAttribute("src", "./assets/sample/german_civil_war.png");
 }
 
 window.onload = function()
