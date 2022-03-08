@@ -69,8 +69,8 @@ window.onload = function()
     set_input_event("country-name", 220, -5, 14);
     set_input_event("faction-name", 220, 15, 14);
     set_input_event("leader-name", 220, 35, 14);
-    set_input_event("party-name", 235, 72, 20);
-    set_input_event("ideology-name", 235, 97, 20);
+    set_input_event("party-name", 235, 68, 20);
+    set_input_event("ideology-name", 235, 93, 20);
     set_input_event("next-election", 235, 118, 20);
     set_input_event("national-focus-name", 234, 163, 20);
     set_input_event("news-title", 103, 295, 15);
