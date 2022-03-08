@@ -42,6 +42,7 @@
 
 #country-leader-pic {
     width: 120px;
+    height: 159px;
 }
 
 .ideology-icon-pic-container {
@@ -50,10 +51,20 @@
     z-index: 3;
 }
 
+#ideology-icon-pic {
+    width: 68px;
+    height: 68px;
+}
+
 .national-focus-icon-pic-container {
-    top: 155px;
-    left: 127px;
+    top: 157px;
+    left: 130px;
     z-index: 3;
+}
+
+#national-focus-icon-pic {
+    width: 88px;
+    height: 70px;
 }
 
 #news-pic {
@@ -69,6 +80,7 @@
 
 #super-event-pic {
     width: 620px;
+    height: 493px;
 }
 
 .super-event-pic-container {
