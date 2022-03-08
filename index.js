@@ -21,6 +21,16 @@ function set_label(ui_name, pos_x, pos_y, font_size, is_center)
     label.innerText = input.value;
 }
 
+function set_pic(ui_name)
+{
+    var input = document.getElementById(ui_name + "-input");
+    var pic = document.getElementById(ui_name + "-pic");
+    var reader = new FileReader();
+
+    reader.onload = function() { pic.setAttribute("src", this.result); }
+    reader.readAsDataURL(input.files[0]);
+}
+
 function set_input_event(ui_name, pos_x, pos_y, font_size, is_center)
 {
     var input = document.getElementById(ui_name + "-input");
@@ -32,6 +42,12 @@ function set_input_value(ui_name, value)
     var input = document.getElementById(ui_name + "-input");
     input.value = value;
     input.dispatchEvent(new Event("input"));
+}
+
+function set_pic_event(ui_name)
+{
+    var input = document.getElementById(ui_name + "-input");
+    input.addEventListener("input", function() { set_pic(ui_name); });
 }
 
 function test_button_event()
@@ -67,4 +83,10 @@ window.onload = function()
     set_input_event("national-focus-name", 260, 166, 20, true);
     set_input_event("news-title", 250, 305, 15, true);
     set_input_event("news-button", 250, 708, 12, true);
+    set_pic_event("country-flag");
+    set_pic_event("country-leader");
+    set_pic_event("ideology-icon");
+    set_pic_event("national-focus-icon");
+    set_pic_event("news");
+    set_pic_event("super-event");
 };
