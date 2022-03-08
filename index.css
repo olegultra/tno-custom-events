@@ -34,6 +34,12 @@
     z-index: 1;
 }
 
+#country-flag-pic
+{
+    width: 82px;
+    height: 52px;
+}
+
 .country-leader-pic-container {
     top: 70px;
     left: 2px;
@@ -105,13 +111,62 @@
     z-index: 3;
 }
 
-.national-focus-button-label {
-    translate: translate(-50%, -50%);
+#national-focus-name-label {
+    width: 271px;
+    text-align: center;
     z-index: 3;
 }
 
 .world-news-popup-label {
     color: black;
     font-family: 'Noto Sans Japanese';
+    z-index: 3;
+}
+
+#news-title-label {
+    text-align: center;
+    width: 390px;
+}
+
+#news-description-label {
+    width: 260px;
+    white-space: pre-wrap;
+    height: 300px;
+}
+
+#news-button-label {
+    text-align: center;
+    width: 275px;
+}
+
+#super-event-title-label {
+    color: darkgray;
+    font-family: 'Aldrich', '03SmartFont';
+    text-align: center;
+    width: 606px;
+    z-index: 3;
+}
+
+#super-event-description-label {
+    color: white;
+    font-family: 'Noto Sans Japanese';
+    text-align: right;
+    width: 580px;
+    text-shadow:2px 2px 0 #000, -2px -2px 0 #000,
+                -2px 2px 0 #000, 2px -2px 0 #000,
+                0px 2px 0 #000,  0-2px 0 #000,
+                -2px 0 0 #000, 2px 0 0 #000;
+    z-index: 3;
+}
+
+#super-event-button-label {
+    color: white;
+    font-family: 'Noto Sans Japanese';
+    text-align: center;
+    width: 225px;
+    text-shadow:2px 2px 0 #000, -2px -2px 0 #000,
+                -2px 2px 0 #000, 2px -2px 0 #000,
+                0px 2px 0 #000,  0-2px 0 #000,
+                -2px 0 0 #000, 2px 0 0 #000;
     z-index: 3;
 }
