@@ -114,6 +114,7 @@
 #national-focus-name-label {
     width: 271px;
     text-align: center;
+    white-space: pre-wrap;
     z-index: 3;
 }
 
@@ -126,6 +127,7 @@
 #news-title-label {
     text-align: center;
     width: 390px;
+    white-space: pre-wrap;
 }
 
 #news-description-label {
@@ -137,6 +139,7 @@
 #news-button-label {
     text-align: center;
     width: 275px;
+    white-space: pre-wrap;
 }
 
 #super-event-title-label {
@@ -144,6 +147,7 @@
     font-family: 'Aldrich', '03SmartFont';
     text-align: center;
     width: 606px;
+    white-space: pre-wrap;
     z-index: 3;
 }
 
@@ -151,7 +155,8 @@
     color: white;
     font-family: 'Noto Sans Japanese';
     text-align: right;
-    width: 580px;
+    width: 540px;
+    white-space: pre-wrap;
     text-shadow:2px 2px 0 #000, -2px -2px 0 #000,
                 -2px 2px 0 #000, 2px -2px 0 #000,
                 0px 2px 0 #000,  0-2px 0 #000,
@@ -164,6 +169,7 @@
     font-family: 'Noto Sans Japanese';
     text-align: center;
     width: 225px;
+    white-space: pre-wrap;
     text-shadow:2px 2px 0 #000, -2px -2px 0 #000,
                 -2px 2px 0 #000, 2px -2px 0 #000,
                 0px 2px 0 #000,  0-2px 0 #000,
