@@ -6,29 +6,34 @@
 */
 @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
-@font-face {
+@font-face 
+{
     font-family: '03SmartFont';
     src: url('./assets/fonts/03SmartFont.otf');
 }
 
-@font-face {
+@font-face 
+{
     font-family: 'Aldrich';
     src: url('./assets/fonts/Aldrich-Regular.ttf');
 }
 
-.pic-container {
+.pic-container 
+{
     position: relative;
     background-color: black;
     white-space: nowrap;
     width: 1148px;
 }
 
-.asset-pic {
+.asset-pic 
+{
     display: flex;
     position: absolute;
 }
 
-.country-flag-pic-container {
+.country-flag-pic-container 
+{
     top: 7px;
     left: 22px;
     z-index: 1;
@@ -40,108 +45,127 @@
     height: 52px;
 }
 
-.country-leader-pic-container {
+.country-leader-pic-container 
+{
     top: 70px;
     left: 2px;
     z-index: 1;
 }
 
-#country-leader-pic {
+#country-leader-pic 
+{
     width: 120px;
     height: 159px;
 }
 
-.ideology-icon-pic-container {
+.ideology-icon-pic-container 
+{
     top: 2px;
     left: 140px;
     z-index: 3;
 }
 
-#ideology-icon-pic {
+#ideology-icon-pic 
+{
     width: 68px;
     height: 68px;
 }
 
-.national-focus-icon-pic-container {
+.national-focus-icon-pic-container 
+{
     top: 157px;
     left: 130px;
     z-index: 3;
 }
 
-#national-focus-icon-pic {
+#national-focus-icon-pic 
+{
     width: 88px;
     height: 70px;
 }
 
-#news-pic {
+#news-pic 
+{
     width: 134px;
     height: 391px;
 }
 
-.news-pic-container {
+.news-pic-container 
+{
     top: 343px;
     left: 104px;
     z-index: 1;
 }
 
-#super-event-pic {
+#super-event-pic 
+{
     width: 620px;
     height: 493px;
 }
 
-.super-event-pic-container {
+.super-event-pic-container 
+{
     top: 54px;
     left: 522px;
     z-index: 1;
 }
 
-.template-pic-container {
+.template-pic-container 
+{
     z-index: 2;
     position: relative;
 }
 
-.political-window-label {
+.political-window-label 
+{
     color: darkgray;
     font-family: 'Aldrich', '03SmartFont';
     z-index: 3;
 }
 
-.country-info-label {
+.country-info-label 
+{
     color: white;
     z-index: 3;
 }
 
-#national-focus-name-label {
+#national-focus-name-label 
+{
     width: 271px;
     text-align: center;
     white-space: pre-wrap;
     z-index: 3;
 }
 
-.world-news-popup-label {
+.world-news-popup-label 
+{
     color: black;
     font-family: 'Noto Sans Japanese';
     z-index: 3;
 }
 
-#news-title-label {
+#news-title-label 
+{
     text-align: center;
     width: 390px;
     white-space: pre-wrap;
 }
 
-#news-description-label {
+#news-description-label 
+{
     width: 260px;
     white-space: pre-wrap;
 }
 
-#news-button-label {
+#news-button-label 
+{
     text-align: center;
     width: 275px;
     white-space: pre-wrap;
 }
 
-#super-event-title-label {
+#super-event-title-label 
+{
     color: darkgray;
     font-family: 'Aldrich', '03SmartFont';
     text-align: center;
@@ -150,7 +174,8 @@
     z-index: 3;
 }
 
-#super-event-description-label {
+#super-event-description-label 
+{
     color: white;
     font-family: 'Noto Sans Japanese';
     text-align: right;
@@ -163,7 +188,8 @@
     z-index: 3;
 }
 
-#super-event-button-label {
+#super-event-button-label 
+{
     color: white;
     font-family: 'Noto Sans Japanese';
     text-align: center;
@@ -174,4 +200,15 @@
                 0px 2px 0 #000,  0-2px 0 #000,
                 -2px 0 0 #000, 2px 0 0 #000;
     z-index: 3;
+}
+
+.pie-graph 
+{
+    position: absolute;
+    z-index: 3;
+    top: 83px;
+    left: 144px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
 }

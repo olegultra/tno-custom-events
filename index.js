@@ -16,14 +16,14 @@ function set_pic(ui_name)
     var pic = document.getElementById(ui_name + "-pic");
     var reader = new FileReader();
 
-    reader.onload = function() { pic.setAttribute("src", this.result); }
+    reader.onload = function () { pic.setAttribute("src", this.result); }
     reader.readAsDataURL(input.files[0]);
 }
 
 function set_input_event(ui_name, pos_x, pos_y, font_size)
 {
     var input = document.getElementById(ui_name + "-input");
-    input.addEventListener("input", function() { set_label(ui_name, pos_x, pos_y, font_size); });
+    input.addEventListener("input", function () { set_label(ui_name, pos_x, pos_y, font_size); });
 }
 
 function set_input_value(ui_name, value)
@@ -36,7 +36,17 @@ function set_input_value(ui_name, value)
 function set_pic_event(ui_name)
 {
     var input = document.getElementById(ui_name + "-input");
-    input.addEventListener("input", function() { set_pic(ui_name); });
+    input.addEventListener("input", function () { set_pic(ui_name); });
+}
+
+function set_pie_graph_event(pie_id_name, input_ui_name)
+{
+    var input = document.getElementById(input_ui_name + "-input");
+    input.addEventListener("input", function ()
+    {
+        var pie = document.getElementById(pie_id_name);
+        pie.style.backgroundImage = input.value;
+    });
 }
 
 function test_button_event()
@@ -45,6 +55,7 @@ function test_button_event()
     set_input_value("faction-name", "Einheitspakt");
     set_input_value("leader-name", "Reichstag Emargency Council");
     set_input_value("party-name", "NSDAP");
+    set_input_value("party-popularities", "conic-gradient(from 120deg, #503200 0% 75%, #341950 75% 90%, #843200 90% 100%)");
     set_input_value("ideology-name", "国家社会主義");
     set_input_value("next-election", "Any elections by event.");
     set_input_value("national-focus-name", "国家方針が未設定");
@@ -63,7 +74,7 @@ function test_button_event()
     document.getElementById("super-event-pic").setAttribute("src", "./assets/sample/german_civil_war.png");
 }
 
-window.onload = function()
+window.onload = function ()
 {
     document.getElementById("test-button").addEventListener("click", test_button_event);
     set_input_event("country-name", 220, -5, 14);
@@ -85,4 +96,5 @@ window.onload = function()
     set_pic_event("national-focus-icon");
     set_pic_event("news");
     set_pic_event("super-event");
+    set_pie_graph_event("pie-graph", "party-popularities");
 };

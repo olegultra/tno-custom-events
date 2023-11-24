@@ -9,7 +9,11 @@
 </head>
 <body>
     <h1>TNO Super Event Generator</h1>
+    <p>Repository: <a href="https://github.com/Zakki0925224/tno-super-event-generator">https://github.com/Zakki0925224/tno-super-event-generator</a></p>
+    <p>This is a low quality generator made as a hobby for "+JP: The New Order".</p>
+    <p>Flag window is handmade. (very low quality)</p>
     <div class="pic-container">
+        <div class="asset-pic pie-graph" id="pie-graph"></div>
         <div class="asset-pic country-flag-pic-container"><img id="country-flag-pic"></div>
         <div class="asset-pic country-leader-pic-container"><img id="country-leader-pic"></div>
         <div class="asset-pic ideology-icon-pic-container"><img id="ideology-icon-pic"></div>
@@ -51,8 +55,8 @@
             <td><input type="file" id="national-focus-icon-input" accept="image/jpeg, image/png"></td>
         </tr>
         <tr>
-            <td>Party Popularity:</td>
-            <td></td>
+            <td>Party Popularities (css <a href="https://developer.mozilla.org/ja/docs/Web/CSS/gradient/conic-gradient">conic-gradient</a>):</td>
+            <td><input type="text" id="party-popularities-input"></input></td>
         </tr>
         <tr>
             <td>Country Name:</td>
