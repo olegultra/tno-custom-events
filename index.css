@@ -119,7 +119,7 @@
 .political-window-label 
 {
     color: darkgray;
-    font-family: 'Aldrich', '03SmartFont';
+    font-family: 'Aldrich', 'Bombardier';
     z-index: 3;
 }
 
@@ -167,7 +167,7 @@
 #super-event-title-label 
 {
     color: darkgray;
-    font-family: 'Aldrich', '03SmartFont';
+    font-family: 'Aldrich', 'Bombardier';
     text-align: center;
     width: 606px;
     white-space: pre-wrap;
