@@ -8,14 +8,14 @@
 
 @font-face 
 {
-    font-family: '03SmartFont';
-    src: url('./assets/fonts/03SmartFont.otf');
+    font-family: 'Bombardier';
+    src: url('./assets/fonts/Bombardier-Regular.ttf');
 }
 
 @font-face 
 {
     font-family: 'Aldrich';
-    src: url('./assets/fonts/Aldrich-Regular.ttf');
+    src: url('./assets/fonts/aldrichrusbydaymarius.ttf');
 }
 
 .pic-container 
